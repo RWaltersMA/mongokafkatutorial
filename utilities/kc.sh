@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
   then
-    echo -e "Enter a topic name as the parameter.\n\nExample:\nkc topicname\n\n"
+    echo -e "\n\nMongoDB Kafka Tutorial - View Kafka Topic helper script\n\nThis script displays the contents of a kafka topic.\n\nExample:\nkc topicname\n\n"
     exit 1
 fi
 # This function is a quick way to view the contents of the kafka topic

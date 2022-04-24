@@ -2,7 +2,7 @@
 
 echo -e "\nKafka topics:\n"
 
-curl --silent "http://broker:8082/topics" | jq
+kafkacat -b broker  -L -J |  jq '.topics' | grep 'topic'
 
 echo -e "\nThe status of the connectors:\n"
 

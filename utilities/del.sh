@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
   then
-    echo -e "Enter the Kafka Connect connector name to delete name\n\nExample:\ndel mongo-sink\n\n"
+    echo -e "\n\nMongoDB Kafka Tutorial - Delete Kafka Connect connector helper script\n\nThis script will delete an existing Kafka Connect connector.\n\nExample:\ndel mongo-simple-source\n\n"
     exit 1
 fi
 

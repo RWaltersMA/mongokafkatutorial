@@ -24,10 +24,13 @@ RUN echo 'PS1="\[\e[32m\][\e[mMongoDB Kafka Connector Tutorial\e[32m]\e[m : "' >
 COPY utilities/kc.sh /usr/local/bin/kc
 COPY utilities/status.sh /usr/local/bin/status
 COPY utilities/del.sh /usr/local/bin/del
+COPY utilities/cx.sh /usr/local/bin/cx
 
 RUN chmod u+x /usr/local/bin/kc
 RUN chmod u+x /usr/local/bin/status
 RUN chmod u+x /usr/local/bin/del
+RUN chmod u+x /usr/local/bin/cx
+
 
 RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' \
     >> /etc/bash.bashrc \
@@ -41,6 +44,7 @@ RUN echo '[ ! -z "$TERM" -a -r /etc/motd ] && cat /etc/issue && cat /etc/motd' \
 =  Command Line                   Description                     =\n\
 =  kc (topicname)                 Shows contents of a topic       =\n\
 =  del (connector)                Deletes Kafka Connect connector =\n\
+=  cx (configuration file.json)   Configure Kafka Connect         =\n\
 =  status                         Shows Kafka Connect status      =\n\
 =  mongosh                        MongoDB Shell                   =\n\
 ===================================================================\n"\

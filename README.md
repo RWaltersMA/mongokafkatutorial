@@ -16,3 +16,5 @@ Once built, simply run the container and launch an interactive shell session:
 ```docker run -it --rm tutorialshell:0.1 bash```
 
 Note: remember to include the --network if your Kafka or MongoDB is located in a seperate docker network.  For more information see the MongoDB Online documentation.
+
+There is a docker image of [MongoKafkaTutorial](https://hub.docker.com/repository/docker/robwma/mongokafkatutorial) available to use on Docker Hub.
